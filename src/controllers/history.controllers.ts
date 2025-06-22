@@ -28,6 +28,7 @@ export const getHistory = async (
         source: (weather as any)?.source || 'cache',
         tempC: (weather as any)?.data?.main?.temp,
         description: (weather as any)?.data?.weather?.[0]?.description,
+        location: (weather as any)?.data?.name,
       },
     }));
 

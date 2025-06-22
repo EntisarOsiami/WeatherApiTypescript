@@ -23,6 +23,7 @@ const getHistory = async (req, res) => {
                 source: weather?.source || 'cache',
                 tempC: weather?.data?.main?.temp,
                 description: weather?.data?.weather?.[0]?.description,
+                location: weather?.data?.name,
             },
         }));
         res.status(200).json(histories);
