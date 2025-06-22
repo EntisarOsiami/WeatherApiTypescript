@@ -11,7 +11,7 @@
     "forceConsistentCasingInFileNames": true,
     "declaration": false,
     "outDir": "./dist",
-    "rootDir": "./",
+    "rootDir": "src",
     "removeComments": true,
     "typeRoots": ["node_modules/@types"],
     "sourceMap": false,
@@ -28,7 +28,7 @@
     "allowUnreachableCode": false
   },
   "include": [
-    "**/*.ts"
+    "src/**/*.ts"
   ],
   "exclude": [
     "node_modules",
